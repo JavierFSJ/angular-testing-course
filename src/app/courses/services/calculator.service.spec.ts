@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { CalculatorService } from "./calculator.service";
 import { LoggerService } from './logger.service';
-import { CoursesService } from './courses.service';
+
 
 
 describe("Caculator Service", () => {
@@ -16,6 +16,7 @@ describe("Caculator Service", () => {
     
 
     //*Using testing module for di
+    //*No using real implemntations
     TestBed.configureTestingModule({
       providers: [
         CalculatorService,
@@ -44,4 +45,3 @@ describe("Caculator Service", () => {
     expect(result).toBe(2);
   });
 });
-/* TestBed.inject(CoursesService) */
